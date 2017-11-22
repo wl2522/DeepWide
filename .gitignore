@@ -1,1 +1,5 @@
 *.csv
+.ipynb_checkpoints/*
+model/*
+*.pdf
+reports/*

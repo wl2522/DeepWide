@@ -1,4 +1,5 @@
 *.csv
 *.pkl
 *.gz
-./model/*
+/model/*
+.ipynb_checkpoints/*

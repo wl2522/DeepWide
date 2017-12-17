@@ -3,3 +3,6 @@
 *.gz
 /model/*
 .ipynb_checkpoints/*
+*.pdf
+*.docx
+*.pptx

@@ -1,12 +1,9 @@
+## Deep or Wide? Why Not Both?
+
+# Our project is concerned with predicting whether or not a KKBox user will play a song again within a month of playing it for the first time. This problem is a binary classification task where we make predictions based on each user’s demographic profile as well as each song’s metadata. Our goal is to implement a wide and deep recommender system in TensorFlow that pairs a linear classifier with a fully-connected neural network. We then attempt to improve on this model architecture to achieve competitive results in the KKBox Music Recommendation Challenge on Kaggle.
+
 # Files
-light GBM.ipynb: trains a gradient boosted decision tree (GBDT) model, which is then used to perform feature transformations in the wide (logistic regression) model
 
-wide.ipynb: builds a baseline logistic regression model in Tensorflow
+wide_and_deep.ipynb: trains a wide and deep model using predictions made by a pretrained gradient boosted decision tree (GBDT) model as a feature
 
-baseline.ipynb: builds a baseline multilayer perceptron model in Tensorflow with the following attributes:
-
-- FEATURES: indicator_gender, indicator_city, indicator_language, indicator_tab, indicator_screen, indicator_source, indicator_registered
-
-- PARAMETERS: hidden_units=[1024, 512, 256], optimizer=tf.train.AdamOptimizer(learning_rate=0.001, name='Adam')), train_steps=600000, batch_size=100
-
-Deep_model.ipynb: builds a deep and wide neural network in Tensorflow
+light GBM.ipynb: trains a GBDT model, which is then used to perform feature transformations in the wide and deep model
